@@ -225,7 +225,8 @@ def validar_campos_obrigatorios(dados: dict) -> list[str]:
         'cep': 'CEP',
         'telefone': 'Telefone',
         'email': 'E-mail',
-        'nome_contato': 'Nome do Contato'
+        'nome_contato': 'Nome do Contato',
+        'ponto_referência': 'Ponto de Referência'
     }
 
     for campo, nome in campos_obrigatorios.items():
@@ -374,7 +375,7 @@ if pagina == "Novo Cadastro":
 
         with col2:
             ponto_referencia = st.text_input(
-                "Ponto de Referência",
+                "Ponto de Referência *",
                 placeholder="Próximo a..."
             )
 
